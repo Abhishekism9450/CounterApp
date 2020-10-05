@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Click on the Like Button to increment the view of the post.</p>
+</div>
+
+<form>
+    <h3>Click Counter </h3>
+    <div class="col-md-12">
+        <div class="pull-left">
+            <p> <b id="noOfVisitors">@ViewData["likes"]</b> <span id="visitorsText"> @ViewData["likes_txt"] </span> </p>
+        </div>
+    </div>
+    <button name="button" value="first" asp-action="Index">Like</button>
+</form>
+
+
